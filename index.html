@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+
+<!-- Latest compiled and minified JavaScript -->  
+  <title>Cross-Version Defect Prediction via Hybrid Active Learning with Kernel Principal Component Analysis</title>
+  <link href="ar.css" rel="stylesheet" type="text/css" />
+
+
+  
+  <meta content="Xu Zhou" name="author" />
+</head>
+
+
+<body>
+
+
+<h1 align="center">Cross-Version Defect Prediction via Hybrid Active Learning with Kernel Principal Component Analysis</h1>
+
+<br style="clear: left;" />
+
+
+<div id="nav">
+<div class="link"><a href="#intro">Description</a></div>
+
+<div class = "link"><a href="#data">Experiment and Data</a></div>
+
+
+<p align="center">
+<a href="https://www.comp.polyu.edu.hk"><img style="border: 0px solid ; width: 160px; height: 63px;" src="polyu-comp-logo.png" alt="Otto-von-Guericke University Magdeburg" /></a></p>
+
+
+<p align="center"><a href="https://www.polyu.edu.hk/web/en/home/index.html"><img src="polyu-logo.jpeg" alt="Database" border="0" height="44" width="160" /></a></p>
+
+
+</div>
+
+
+<div class="con">
+<h2><a name="intro" id="introduction">
+</a>Description</h2>
+As defects in software modules may cause product
+failure and financial loss, it is critical to utilize defect prediction
+methods to effectively identify the potentially defective modules
+for a thorough inspection, especially in the early stage of software
+development lifecycle. For an upcoming version of a software
+project, it is practical to employ the historical labeled defect
+data of the prior versions within the same project to conduct
+defect prediction on the current version, i.e., Cross-Version
+Defect Prediction (CVDP). However, software development is
+a dynamic evolution process that may cause the data distribution
+(such as defect characteristics) to vary across versions.
+Furthermore, the raw features usually may not well reveal the
+intrinsic structure information behind the data. Therefore, it
+is challenging to perform effective CVDP. In this paper, we
+propose a two-phase CVDP framework that combines Hybrid
+Active Learning and Kernel PCA (HALKP) to address these two
+issues. In the first stage, HALKP uses a hybrid active learning
+method to select some informative and representative unlabeled
+modules from the current version for querying their labels, then
+merges them into the labeled modules of the prior version to
+form an enhanced training set. In the second stage, HALKP
+employs a non-linear mapping method, kernel PCA, to extract
+representative features by embedding the original data of two
+versions into a high-dimension space. We evaluate the HALKP
+framework on 31 versions of 10 projects with three prevalent
+performance indicators. The experimental results indicate that
+HALKP achieves encouraging results with average F-measure,
+g-mean and Balance of 0.480, 0.592 and 0.580, respectively and
+significantly outperforms nearly all baseline methods.
+
+<p class="abstract">
+</p>
+
+
+<h2><a name="data" id="data"></a>Experiment and Data</h2>
+<p><a href = "./SANER_2018_add_material_38.zip">download</a>
+</p>
+
+</div>
+
+
+</body>
+</html>
